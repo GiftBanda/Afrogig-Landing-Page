@@ -41,7 +41,11 @@
 
             <section class="feedback" >
                 <h1>Early Access</h1>
-                <form>
+                <form name='contact' method='POST' netlify-honeypot='bot-field' data-netlify='true' >
+                    <input type="hidden" name='form-name' value='contact' />
+                    <p class="hidden">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                      </p>
                     <label>Your Name</label>
                     <input type="text" placeholder="Gift Banda" />
                     <label>Email</label>
