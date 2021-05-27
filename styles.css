@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.container {
+    background-image: url(./images/jobhunt.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.container::after {
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+.heading h1 {
+    font-size: 4.5rem;
+    color: #f98404;
+}
+
+.heading h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    color: #f98304c0;
+}
+
+.heading h5 {
+    width: 400px;
+    text-transform: capitalize;
+    color: #e2e0e0;
+}
+
+.container .heading {
+    top: 0%;
+    left: 20%;
+    translate: (-50%, -50%5);
+    position: absolute;
+    z-index: 10;
+    color: white;
+}
+
+.container .time-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.time-left > div * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.time-left h2 {
+    font-size: 3rem;
+    color: #173ff3;
+}
+
+.feedback {
+    top: 46%;
+    left: 20%;
+    translate: (-50%, -50%);
+    position: absolute;
+    z-index: 10;
+    color: white;
+    margin-top: 1rem;
+}
+
+.feedback h1 {
+    color: #173ff3;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.feedback form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    width: 400px;
+}
+
+.feedback form label {
+    font-size: small;
+}
+
+.feedback input {
+    padding: .8rem .5rem;
+    border-radius: 5px;
+    border: 1px solid #f98404;
+    caret-color: #f98404;
+}
+
+.feedback input:focus {
+    outline: none;
+    box-shadow: 0px 0px 4px 2px rgba(238, 238, 238, 0.3);
+}
+
+.btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+.btn-grad {
+   padding: 12px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px rgba(238, 238, 238, 0.3);
+   border-radius: 5px;
+   border: none;
+   display: block;
+   cursor: pointer;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+ a {background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%)}
+ a {
+     text-decoration: none;
+    padding: 8px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(238, 238, 238, 0.3);
+    color: white;            
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+  a:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+
+    body {
+        line-height: 1.2;
+    }
+
+    .container .heading {
+        top: 2%;
+        left: 4%;
+    }
+
+    .heading h1 {
+        font-size: 3rem;
+        padding-bottom: .5rem;
+    }
+    
+    .heading h3 {
+        font-size: 1rem;
+        padding-top: .5rem;
+        font-weight: 500;
+    }
+    
+    .heading h5 {
+        width: 300px;
+        font-size: small;
+        font-weight: 400;
+        padding-top: .3rem;
+    }
+
+    .time-left h2 {
+        font-size: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    .time-left p {
+        font-size: 12px;
+    }
+    
+    .feedback {
+        top: 40%;
+        left: 4%;
+        margin-top: 1rem;
+    }
+
+    .feedback h1 {
+        font-weight: 500;
+        font-size: medium;
+        margin-bottom: .5rem;
+    }
+    
+    .feedback form {
+        gap: .5rem;
+        width: 300px;
+    }
+    
+
+}
